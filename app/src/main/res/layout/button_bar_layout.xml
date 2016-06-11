@@ -1,0 +1,56 @@
+<android.support.v7.widget.CardView
+    android:id="@+id/bottomBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="5dp">
+        <ToggleButton
+            android:id="@+id/tg_play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bg_play"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textOff=""
+            android:textOn=""
+            android:foreground="?selectableItemBackground"/>
+
+        <View
+            android:visibility="gone"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tg_play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_save"/>
+
+        <FrameLayout
+            android:id="@+id/offset"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_page">
+
+            <TextView
+                android:id="@+id/tv_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textColor="@color/colorPrimaryDark" />
+        </FrameLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

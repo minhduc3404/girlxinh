@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="wallpaper"
+        android:summary="This option if selected will allow auto change your phone wallpaper"
+        android:title="Auto change wallpaper" />
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listValues"
+        android:key="quality"
+        android:summary="Choose a appropriate quality with your phone"
+        android:title="Photo Quality" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="music"
+        android:title="Turn ON/OFF sound" />
+    <com.pavelsikun.seekbarpreference.SeekBarPreference
+        android:key="time"
+        android:title="Time auto slide"
+        android:summary="set time for slide auto mode"
+        android:enabled="true"
+        app:msbp_minValue="3"
+        app:msbp_maxValue="60"
+        app:msbp_interval="1"
+        app:msbp_measurementUnit="second"/>
+</PreferenceScreen>
